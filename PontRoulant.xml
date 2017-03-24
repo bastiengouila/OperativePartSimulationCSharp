@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VariablesExchangeFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="VariablesExchangeFile.xsd">
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V2.2.0.c806" dateTime="date_and_time#2007-4-25-10:33:22" content="Fichier source variables" DTDVersion="6"></fileHeader>
+	<contentHeader name="TS_C174_PA" version="0.0.1" dateTime="date_and_time#2007-4-25-11:12:33"></contentHeader>
+	<dataBlock>
+		<variables name="iebBpanfArretUrgence" typeName="EBOOL" topologicalAddress="%I0.1.14"></variables>
+		<variables name="iebBpCuvesVides" typeName="EBOOL" topologicalAddress="%I0.1.15"></variables>
+		<variables name="iebBpDeplacementDroitePont" typeName="EBOOL" topologicalAddress="%I0.1.3"></variables>
+		<variables name="iebBpDescendrePont" typeName="EBOOL" topologicalAddress="%I0.1.2"></variables>
+		<variables name="iebBpMonterPont" typeName="EBOOL" topologicalAddress="%I0.1.1"></variables>
+		<variables name="iebBpPresencePiece" typeName="EBOOL" topologicalAddress="%I0.1.0"></variables>
+		<variables name="iebComModeAuto" typeName="EBOOL" topologicalAddress="%I0.1.5"></variables>
+		<variables name="iebComModeManu" typeName="EBOOL" topologicalAddress="%I0.1.6"></variables>
+		<variables name="iebDeplacementGauchePont" typeName="EBOOL" topologicalAddress="%I0.1.4"></variables>
+		<variables name="iebPontPosBasse" typeName="EBOOL" topologicalAddress="%I0.1.12"></variables>
+		<variables name="iebPontPosCuve1" typeName="EBOOL" topologicalAddress="%I0.1.8"></variables>
+		<variables name="iebPontPosCuve2" typeName="EBOOL" topologicalAddress="%I0.1.9"></variables>
+		<variables name="iebPontPosCuve3" typeName="EBOOL" topologicalAddress="%I0.1.10"></variables>
+		<variables name="iebPontPosCuveE" typeName="EBOOL" topologicalAddress="%I0.1.7"></variables>
+		<variables name="iebPontPosCuveS" typeName="EBOOL" topologicalAddress="%I0.1.11"></variables>
+		<variables name="iebPontPosHaute" typeName="EBOOL" topologicalAddress="%I0.1.13"></variables>
+		<variables name="qebCuve1VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.5"></variables>
+		<variables name="qebCuve2VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.6"></variables>
+		<variables name="qebCuve3VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.7"></variables>
+		<variables name="qebCuveEVoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.4"></variables>
+		<variables name="qebPontDeplacerDroite" typeName="EBOOL" topologicalAddress="%Q0.2.1"></variables>
+		<variables name="qebPontDeplacerGauche" typeName="EBOOL" topologicalAddress="%Q0.2.0"></variables>
+		<variables name="qebPontDescendre" typeName="EBOOL" topologicalAddress="%Q0.2.2"></variables>
+		<variables name="qebPontMonter" typeName="EBOOL" topologicalAddress="%Q0.2.3"></variables>
+	</dataBlock>
+</VariablesExchangeFile>
