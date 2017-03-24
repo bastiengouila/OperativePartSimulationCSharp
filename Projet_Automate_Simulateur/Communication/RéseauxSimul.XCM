@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<COMExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:39:30" content="Fichier source communication" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Simulateur" version="0.0.6" dateTime="date_and_time#2016-3-9-11:54:57"></contentHeader>
+	<comm>
+		<network>
+			<ethernet name="Ethernet_C163" networkFamilyCatKey="NetworkFamily_Ethernet_Premium_Regular" networkCatKey="Network_Ethernet_Premium" topoAddress="">
+				<premium>
+					<ETYIntranet NTP_SRV="0">
+						<IPConfiguration ethernetConfiguration="1" networkConfiguration="1">
+							<IPNetwork>
+								<IPAddress IP0="0" IP1="0" IP2="0" IP3="0"></IPAddress>
+							</IPNetwork>
+							<mask>
+								<IPAddress IP0="255" IP1="0" IP2="0" IP3="0"></IPAddress>
+							</mask>
+							<gateway>
+								<IPAddress IP0="0" IP1="0" IP2="0" IP3="0"></IPAddress>
+							</gateway>
+							<DeviceName></DeviceName>
+						</IPConfiguration>
+						<Messaging nbLine="0" CtrlIPAddress="0">
+							<XWayAddress network="3" station="28"></XWayAddress>
+							<Connection accessControl="0"></Connection>
+						</Messaging>
+						<SNMP location="" contact="" set="public" get="public" trap="public" manager="0" authentification="0">
+							<IPAddressMgr1>
+								<IPAddress IP0="0" IP1="0" IP2="0" IP3="0"></IPAddress>
+							</IPAddressMgr1>
+							<IPAddressMgr2>
+								<IPAddress IP0="0" IP1="0" IP2="0" IP3="0"></IPAddress>
+							</IPAddressMgr2>
+						</SNMP>
+						<bandwidth>
+							<BWCalculation cycleTime="0" messagingFlow="0" distribIOScanning="0" distribGlobalData="0" distribMessaging="0" distribOthers="100"></BWCalculation>
+						</bandwidth>
+					</ETYIntranet>
+				</premium>
+			</ethernet>
+		</network>
+		<routingTable>
+			<table name="Ethernet_C163" type=""></table>
+		</routingTable>
+	</comm>
+</COMExchangeFile>

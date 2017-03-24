@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VariablesExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:25:5" content="Fichier source variables" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Physique" version="0.0.28" dateTime="date_and_time#2016-3-9-12:38:0"></contentHeader>
+	<dataBlock>
+		<variables name="mxResult" typeName="BOOL"></variables>
+		<variables name="iebBpanfArretUrgence" typeName="EBOOL" topologicalAddress="%I0.1.14"></variables>
+		<variables name="iebBpCuvesVides" typeName="EBOOL" topologicalAddress="%I0.1.15"></variables>
+		<variables name="iebBpDeplacementDroitePont" typeName="EBOOL" topologicalAddress="%I0.1.3"></variables>
+		<variables name="iebBpDescendrePont" typeName="EBOOL" topologicalAddress="%I0.1.2"></variables>
+		<variables name="iebBpMonterPont" typeName="EBOOL" topologicalAddress="%I0.1.1"></variables>
+		<variables name="iebBpPresencePiece" typeName="EBOOL" topologicalAddress="%I0.1.0"></variables>
+		<variables name="iebComModeAuto" typeName="EBOOL" topologicalAddress="%I0.1.5"></variables>
+		<variables name="iebComModeManu" typeName="EBOOL" topologicalAddress="%I0.1.6"></variables>
+		<variables name="iebDeplacementGauchePont" typeName="EBOOL" topologicalAddress="%I0.1.4"></variables>
+		<variables name="iebPontPosBasse" typeName="EBOOL" topologicalAddress="%I0.1.12"></variables>
+		<variables name="iebPontPosCuve1" typeName="EBOOL" topologicalAddress="%I0.1.8"></variables>
+		<variables name="iebPontPosCuve2" typeName="EBOOL" topologicalAddress="%I0.1.9"></variables>
+		<variables name="iebPontPosCuve3" typeName="EBOOL" topologicalAddress="%I0.1.10"></variables>
+		<variables name="iebPontPosCuveE" typeName="EBOOL" topologicalAddress="%I0.1.7"></variables>
+		<variables name="iebPontPosCuveS" typeName="EBOOL" topologicalAddress="%I0.1.11"></variables>
+		<variables name="iebPontPosHaute" typeName="EBOOL" topologicalAddress="%I0.1.13"></variables>
+		<variables name="qebCuve1VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.5"></variables>
+		<variables name="qebCuve2VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.6"></variables>
+		<variables name="qebCuve3VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.7"></variables>
+		<variables name="qebCuveEVoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.4"></variables>
+		<variables name="qebPontDeplacerDroite" typeName="EBOOL" topologicalAddress="%Q0.2.1"></variables>
+		<variables name="qebPontDeplacerGauche" typeName="EBOOL" topologicalAddress="%Q0.2.0"></variables>
+		<variables name="qebPontDescendre" typeName="EBOOL" topologicalAddress="%Q0.2.2"></variables>
+		<variables name="qebPontMonter" typeName="EBOOL" topologicalAddress="%Q0.2.3"></variables>
+		<variables name="qebCuve1VoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.8"></variables>
+		<variables name="qebCuve1VoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.9"></variables>
+		<variables name="qebCuve2VoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.10"></variables>
+		<variables name="qebCuve2VoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.11"></variables>
+		<variables name="qebCuve3VoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.12"></variables>
+		<variables name="qebCuve3VoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.13"></variables>
+		<variables name="qebCuveEVoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.14"></variables>
+		<variables name="qebCuveEVoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.15"></variables>
+		<variables topologicalAddress="%Q0.2.16" typeName="EBOOL"></variables>
+		<variables name="iintCompteur" typeName="INT"></variables>
+		<variables name="mxA6" typeName="BOOL"></variables>
+		<variables name="mwA1" typeName="BOOL"></variables>
+		<variables name="mxF1A2" typeName="BOOL"></variables>
+		<variables name="mxF4" typeName="BOOL"></variables>
+		<variables name="mxA5" typeName="BOOL"></variables>
+		<variables name="mxD1" typeName="BOOL"></variables>
+		<variables name="mxF1" typeName="BOOL"></variables>
+		<variables name="TabiebCuve" typeName="ARRAY[0..3] OF EBOOL" topologicalAddress="%I0.1.7"></variables>
+	</dataBlock>
+</VariablesExchangeFile>

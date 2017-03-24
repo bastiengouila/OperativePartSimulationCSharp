@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VariablesExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:38:12" content="Fichier source variables" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Simulateur" version="0.0.6" dateTime="date_and_time#2016-3-9-11:54:57"></contentHeader>
+	<dataBlock>
+		<variables name="iebBpCuvesVides" typeName="EBOOL" topologicalAddress="%M2"></variables>
+		<variables name="mxA6_0" typeName="BOOL"></variables>
+		<variables name="iebBpPresencePiece" typeName="EBOOL" topologicalAddress="%M6"></variables>
+		<variables name="iebComModeManu" typeName="EBOOL" topologicalAddress="%M8"></variables>
+		<variables name="iebComModeAuto" typeName="EBOOL" topologicalAddress="%M7"></variables>
+		<variables name="qebCuve3VoyantRouge" typeName="EBOOL" topologicalAddress="%M22"></variables>
+		<variables name="qebCuve2VoyantOrange" typeName="EBOOL" topologicalAddress="%M29"></variables>
+		<variables name="qebCuve3VoyantVert" typeName="EBOOL" topologicalAddress="%M26"></variables>
+		<variables name="qebCuveEVoyantRouge" typeName="EBOOL" topologicalAddress="%M23"></variables>
+		<variables name="qebCuve1VoyantRouge" typeName="EBOOL" topologicalAddress="%M20"></variables>
+		<variables name="qebCuveEVoyantVert" typeName="EBOOL" topologicalAddress="%M27"></variables>
+		<variables name="qebCuve1VoyantOrange" typeName="EBOOL" topologicalAddress="%M28"></variables>
+		<variables name="iebBpMonterPont" typeName="EBOOL" topologicalAddress="%M5"></variables>
+		<variables name="qebCuve3VoyantOrange" typeName="EBOOL" topologicalAddress="%M30"></variables>
+		<variables name="iebBpDescendrePont" typeName="EBOOL" topologicalAddress="%M4"></variables>
+		<variables name="qebCuve2VoyantRouge" typeName="EBOOL" topologicalAddress="%M21"></variables>
+		<variables name="qebPontDeplacerDroite" typeName="EBOOL" topologicalAddress="%M32"></variables>
+		<variables name="qebCuve2VoyantVert" typeName="EBOOL" topologicalAddress="%M25"></variables>
+		<variables name="qebPontDeplacerGauche" typeName="EBOOL" topologicalAddress="%M33"></variables>
+		<variables name="iebBpDeplacementDroitePont" typeName="EBOOL" topologicalAddress="%M3"></variables>
+		<variables name="qebCuveEVoyantOrange" typeName="EBOOL" topologicalAddress="%M31"></variables>
+		<variables name="qebCuve1VoyantVert" typeName="EBOOL" topologicalAddress="%M24"></variables>
+		<variables name="qebPontMonter" typeName="EBOOL" topologicalAddress="%M35"></variables>
+		<variables name="iebDeplacementGauchePont" typeName="EBOOL" topologicalAddress="%M9"></variables>
+		<variables name="qebPontDescendre" typeName="EBOOL" topologicalAddress="%M34"></variables>
+		<variables name="mxD1" typeName="BOOL"></variables>
+		<variables name="mxF4" typeName="BOOL"></variables>
+		<variables name="iebBpanfArretUrgence" typeName="EBOOL" topologicalAddress="%M1"></variables>
+		<variables name="mxResult" typeName="BOOL"></variables>
+		<variables name="mxA6" typeName="BOOL"></variables>
+		<variables name="mxA5" typeName="BOOL"></variables>
+		<variables name="mwA1" typeName="BOOL"></variables>
+		<variables name="iebPontPosCuve1" typeName="EBOOL" topologicalAddress="%M11"></variables>
+		<variables name="iebPontPosHaute" typeName="EBOOL" topologicalAddress="%M16"></variables>
+		<variables name="iebPontPosCuveS" typeName="EBOOL" topologicalAddress="%M15"></variables>
+		<variables name="mxF1A2" typeName="BOOL"></variables>
+		<variables name="iebPontPosBasse" typeName="EBOOL" topologicalAddress="%M10"></variables>
+		<variables name="iintCompteur" typeName="INT"></variables>
+		<variables name="iebPontPosCuveE" typeName="EBOOL" topologicalAddress="%M14"></variables>
+		<variables name="iebPontPosCuve3" typeName="EBOOL" topologicalAddress="%M13"></variables>
+		<variables name="iebPontPosCuve2" typeName="EBOOL" topologicalAddress="%M12"></variables>
+		<variables name="TabiebCuve" typeName="ARRAY[0..3] OF EBOOL" topologicalAddress="%M11"></variables>
+	</dataBlock>
+</VariablesExchangeFile>

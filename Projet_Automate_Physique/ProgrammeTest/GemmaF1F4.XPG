@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PGMExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:27:43" content="Fichier source multiprogramme" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Physique" version="0.0.28" dateTime="date_and_time#2016-3-9-12:38:0"></contentHeader>
+	<logicConf>
+		<resource resName="Premium" resIdent="TSX P57 104M 02.00">
+			<taskDesc task="MAST" taskType="cyclic" valueType="0" maxExecTime="600">
+				<sectionDesc name="Gemma"></sectionDesc>
+				<sectionDesc name="Gemma_Post"></sectionDesc>
+				<sectionDesc name="D1_Arret_Urgence" activationCondition="mxD1" logicCondition="standard"></sectionDesc>
+				<sectionDesc name="A1_ArretEtatInit" activationCondition="mwA1" logicCondition="standard"></sectionDesc>
+				<sectionDesc name="A6_ConditionsInitiales" activationCondition="mxA6" logicCondition="standard"></sectionDesc>
+				<sectionDesc name="F1" activationCondition="mxF1" logicCondition="standard"></sectionDesc>
+				<sectionDesc name="F1_Post" activationCondition="mxF1" logicCondition="standard"></sectionDesc>
+				<sectionDesc name="F4_ModeManu" activationCondition="mxF4" logicCondition="standard"></sectionDesc>
+			</taskDesc>
+		</resource>
+	</logicConf>
+	<SFCProgram areaNum="0" operatorCtrl="0">
+		<identProgram name="Gemma" type="section" task="MAST"></identProgram>
+		<chartSource name="Chart">
+			<networkSFC>
+				<step stepType="initialStep" stepName="D1_AU">
+					<objPosition posX="4" posY="1"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="A5_Restart">
+					<objPosition posX="4" posY="3"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="A6_CI">
+					<objPosition posX="3" posY="5"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="A1_AEI">
+					<objPosition posX="3" posY="7"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="F4_Manu">
+					<objPosition posX="3" posY="9"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="F1_Auto">
+					<objPosition posX="4" posY="9"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="A2">
+					<objPosition posX="4" posY="11"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<altBranch width="2" relativePos="0">
+					<objPosition posX="3" posY="8"></objPosition>
+				</altBranch>
+				<altJoint width="2" relativePos="0">
+					<objPosition posX="3" posY="4"></objPosition>
+				</altJoint>
+				<altJoint width="2" relativePos="0">
+					<objPosition posX="3" posY="6"></objPosition>
+				</altJoint>
+				<transition>
+					<objPosition posX="4" posY="2"></objPosition>
+					<transitionCondition invertLogic="false">
+						<variableName>iebBpanfArretUrgence</variableName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="4" posY="4"></objPosition>
+					<transitionCondition invertLogic="false">
+						<boolLiteral>true</boolLiteral>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="3" posY="6"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_Arret_Initiales</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="3" posY="8"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_Acces_Manu</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="4" posY="8"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_Acces_Auto</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="4" posY="10"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_Reset_Auto</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="3" posY="10"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_Reset_Manu</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="4" posY="12"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_CI_F1</sectionName>
+					</transitionCondition>
+				</transition>
+				<linkSFC>
+					<directedLinkSource objectType="transition">
+						<objPosition posX="3" posY="10"></objPosition>
+					</directedLinkSource>
+					<directedLinkDestination objectType="altJoint">
+						<objPosition posX="3" posY="4"></objPosition>
+					</directedLinkDestination>
+					<gridObjPosition posX="2.5" posY="10.8125"></gridObjPosition>
+					<gridObjPosition posX="2.5" posY="4.8125"></gridObjPosition>
+				</linkSFC>
+				<linkSFC>
+					<directedLinkSource objectType="transition">
+						<objPosition posX="4" posY="12"></objPosition>
+					</directedLinkSource>
+					<directedLinkDestination objectType="altJoint">
+						<objPosition posX="4" posY="6"></objPosition>
+					</directedLinkDestination>
+					<gridObjPosition posX="5.5" posY="12.8125"></gridObjPosition>
+					<gridObjPosition posX="5.5" posY="5.8125"></gridObjPosition>
+					<gridObjPosition posX="4.5" posY="5.8125"></gridObjPosition>
+				</linkSFC>
+			</networkSFC>
+		</chartSource>
+		<transitionSource name="T_Reset_Auto">
+			<STSource>not iebComModeAuto
+</STSource>
+		</transitionSource>
+		<transitionSource name="T_Reset_Manu">
+			<STSource>not iebComModeManu
+</STSource>
+		</transitionSource>
+		<transitionSource name="T_Acces_Auto">
+			<STSource>iebComModeAuto and not iebComModeManu
+</STSource>
+		</transitionSource>
+		<transitionSource name="T_Acces_Manu">
+			<STSource>not iebComModeAuto and iebComModeManu
+</STSource>
+		</transitionSource>
+		<transitionSource name="T_Arret_Initiales">
+			<STSource>iebPontPosCuveE AND iebPontPosBasse
+</STSource>
+		</transitionSource>
+		<transitionSource name="T_CI_F1">
+			<STSource>F1_S_1.x
+</STSource>
+		</transitionSource>
+	</SFCProgram>
+	<program>
+		<identProgram name="Gemma_Post" type="section" task="MAST"></identProgram>
+		<STSource>mxA6 := A6_CI.x;
+mwA1 := A1_AEI.x;
+mxF1A2 := F1_Auto.x or A2.x;
+mxF4 := F4_Manu.x;
+mxF1 := F1_Auto.x;
+mxA5 := A5_Restart.x;
+mxD1 := D1_AU.x;
+If (NOT iebBpanfArretUrgence) then
+	mxResult:=INITCHART(Gemma, true);
+end_if;
+</STSource>
+	</program>
+	<program>
+		<identProgram name="D1_Arret_Urgence" type="section" task="MAST"></identProgram>
+		<STSource>qebPontMonter := false;
+qebPontDeplacerDroite := false;
+qebPontDescendre := false;
+qebPontDeplacerGauche := false;
+qebCuveEVoyantOrange := false;
+qebCuve1VoyantOrange := false;
+qebCuve2VoyantOrange := false;
+qebCuve3VoyantOrange := false;
+qebCuveEVoyantRouge := false;
+qebCuve1VoyantRouge := false;
+qebCuve2VoyantRouge := false;
+qebCuve3VoyantRouge := false;
+qebCuveEVoyantVert := false;
+qebCuve1VoyantVert := false;
+qebCuve2VoyantVert := false;
+qebCuve3VoyantVert := false;
+</STSource>
+	</program>
+	<program>
+		<identProgram name="A1_ArretEtatInit" type="section" task="MAST"></identProgram>
+		<STSource>qebPontMonter := false;
+qebPontDeplacerDroite := false;
+qebPontDescendre := (NOT iebPontPosBasse);
+qebPontDeplacerGauche := (NOT iebPontPosCuveE) AND iebPontPosBasse;
+qebCuveEVoyantOrange := iebPontPosCuveE AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuve1VoyantOrange := iebPontPosCuve1 AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuve2VoyantOrange := iebPontPosCuve2 AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuve3VoyantOrange := iebPontPosCuve3 AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuveEVoyantRouge := NOT iebPontPosCuveE;
+qebCuve1VoyantRouge := NOT iebPontPosCuve1;
+qebCuve2VoyantRouge := NOT iebPontPosCuve2;
+qebCuve3VoyantRouge := NOT iebPontPosCuve3;
+qebCuveEVoyantVert := iebPontPosCuveE AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+qebCuve1VoyantVert := iebPontPosCuve1 AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+qebCuve2VoyantVert := iebPontPosCuve2 AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+qebCuve3VoyantVert := iebPontPosCuve3 AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+</STSource>
+	</program>
+	<program>
+		<identProgram name="A6_ConditionsInitiales" type="section" task="MAST"></identProgram>
+		<STSource>qebPontMonter := false;
+qebPontDeplacerDroite := false;
+qebPontDescendre := (NOT iebPontPosBasse);
+qebPontDeplacerGauche := (NOT iebPontPosCuveE) AND iebPontPosBasse;
+qebCuveEVoyantOrange := iebPontPosCuveE AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuve1VoyantOrange := iebPontPosCuve1 AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuve2VoyantOrange := iebPontPosCuve2 AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuve3VoyantOrange := iebPontPosCuve3 AND (iebPontPosHaute OR iebPontPosBasse);
+qebCuveEVoyantRouge := NOT iebPontPosCuveE;
+qebCuve1VoyantRouge := NOT iebPontPosCuve1;
+qebCuve2VoyantRouge := NOT iebPontPosCuve2;
+qebCuve3VoyantRouge := NOT iebPontPosCuve3;
+qebCuveEVoyantVert := iebPontPosCuveE AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+qebCuve1VoyantVert := iebPontPosCuve1 AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+qebCuve2VoyantVert := iebPontPosCuve2 AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+qebCuve3VoyantVert := iebPontPosCuve3 AND (NOT (iebPontPosHaute AND iebPontPosBasse));
+</STSource>
+	</program>
+	<SFCProgram areaNum="0" operatorCtrl="0">
+		<identProgram name="F1" type="section" task="MAST"></identProgram>
+		<chartSource name="Chart">
+			<networkSFC>
+				<step stepType="initialStep" stepName="F1_S_1">
+					<objPosition posX="3" posY="0"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="F1_S_2">
+					<objPosition posX="3" posY="2"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="F1_S_4">
+					<objPosition posX="6" posY="7"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="F1_S_3">
+					<objPosition posX="6" posY="3"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="F1_S_10">
+					<objPosition posX="5" posY="3"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<altBranch width="2" relativePos="0">
+					<objPosition posX="5" posY="6"></objPosition>
+				</altBranch>
+				<parBranch width="4" relativePos="0">
+					<objPosition posX="3" posY="2"></objPosition>
+				</parBranch>
+				<altJoint width="2" relativePos="0">
+					<objPosition posX="5" posY="4"></objPosition>
+				</altJoint>
+				<parJoint width="4" relativePos="2">
+					<objPosition posX="3" posY="7"></objPosition>
+				</parJoint>
+				<step stepType="macroStep" stepName="F1_MS_1">
+					<objPosition posX="5" posY="5"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="macroStep" stepName="F1_MS_2">
+					<objPosition posX="5" posY="9"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<transition>
+					<objPosition posX="3" posY="1"></objPosition>
+					<transitionCondition invertLogic="false">
+						<variableName>iebBpPresencePiece</variableName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="6" posY="4"></objPosition>
+					<transitionCondition invertLogic="false">
+						<boolLiteral>true</boolLiteral>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="6" posY="6"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>TIntSupEgal4</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="5" posY="6"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>TintInf4</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="5" posY="4"></objPosition>
+					<transitionCondition invertLogic="false">
+						<boolLiteral>true</boolLiteral>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="5" posY="8"></objPosition>
+					<transitionCondition invertLogic="false">
+						<boolLiteral>true</boolLiteral>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="5" posY="10"></objPosition>
+					<transitionCondition invertLogic="false">
+						<boolLiteral>true</boolLiteral>
+					</transitionCondition>
+				</transition>
+				<linkSFC>
+					<directedLinkSource objectType="transition">
+						<objPosition posX="5" posY="10"></objPosition>
+					</directedLinkSource>
+					<directedLinkDestination objectType="step">
+						<objPosition posX="3" posY="0"></objPosition>
+					</directedLinkDestination>
+					<gridObjPosition posX="5.5" posY="11"></gridObjPosition>
+					<gridObjPosition posX="2.5" posY="11"></gridObjPosition>
+					<gridObjPosition posX="2.5" posY="0"></gridObjPosition>
+					<gridObjPosition posX="3.5" posY="0"></gridObjPosition>
+				</linkSFC>
+				<linkSFC>
+					<directedLinkSource objectType="parBranch">
+						<objPosition posX="6" posY="2"></objPosition>
+					</directedLinkSource>
+					<directedLinkDestination objectType="step">
+						<objPosition posX="6" posY="3"></objPosition>
+					</directedLinkDestination>
+				</linkSFC>
+				<linkSFC>
+					<directedLinkSource objectType="step">
+						<objPosition posX="3" posY="2"></objPosition>
+					</directedLinkSource>
+					<directedLinkDestination objectType="parJoint">
+						<objPosition posX="3" posY="7"></objPosition>
+					</directedLinkDestination>
+				</linkSFC>
+				<linkSFC>
+					<directedLinkSource objectType="transition">
+						<objPosition posX="5" posY="6"></objPosition>
+					</directedLinkSource>
+					<directedLinkDestination objectType="step">
+						<objPosition posX="5" posY="3"></objPosition>
+					</directedLinkDestination>
+					<gridObjPosition posX="5.5" posY="7"></gridObjPosition>
+					<gridObjPosition posX="4.5" posY="7"></gridObjPosition>
+					<gridObjPosition posX="4.5" posY="3"></gridObjPosition>
+					<gridObjPosition posX="5.5" posY="3"></gridObjPosition>
+				</linkSFC>
+				<textBox width="1" height="1">Remise en CI<objPosition posX="7" posY="9"></objPosition>
+				</textBox>
+				<textBox width="1" height="1">Voyants<objPosition posX="1" posY="2"></objPosition>
+				</textBox>
+				<textBox width="1" height="1">Boucle Test cuves et bras<objPosition posX="7" posY="5"></objPosition>
+				</textBox>
+			</networkSFC>
+		</chartSource>
+		<macroSource name="F1_MS_1">
+			<networkSFC>
+				<step stepType="inStep" stepName="F1_MS_1_IN">
+					<objPosition posX="1" posY="0"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="MS1_1">
+					<objPosition posX="1" posY="2"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="MS1_2">
+					<objPosition posX="1" posY="4"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="MS1_4">
+					<objPosition posX="1" posY="8"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="MS1_3">
+					<objPosition posX="1" posY="6"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="outStep" stepName="F1_MS_1_OUT">
+					<objPosition posX="1" posY="10"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<transition>
+					<objPosition posX="1" posY="1"></objPosition>
+					<transitionCondition invertLogic="true">
+						<variableName>iebPontPosCuveS</variableName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="1" posY="5"></objPosition>
+					<transitionCondition invertLogic="false">
+						<variableName>iebPontPosBasse</variableName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="1" posY="9"></objPosition>
+					<transitionCondition invertLogic="false">
+						<variableName>iebPontPosHaute</variableName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="1" posY="7"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>Ttime1S</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="1" posY="3"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T1MS1Cuves</sectionName>
+					</transitionCondition>
+				</transition>
+				<textBox width="1" height="1">Attente<objPosition posX="0" posY="6"></objPosition>
+				</textBox>
+				<textBox width="1" height="1">Descendre<objPosition posX="0" posY="4"></objPosition>
+				</textBox>
+				<textBox width="1" height="1">Vers la droite<objPosition posX="0" posY="2"></objPosition>
+				</textBox>
+				<textBox width="1" height="1">Monter<objPosition posX="0" posY="8"></objPosition>
+				</textBox>
+			</networkSFC>
+		</macroSource>
+		<macroSource name="F1_MS_2">
+			<networkSFC>
+				<step stepType="inStep" stepName="F1_MS_2_IN">
+					<objPosition posX="1" posY="0"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="MS2_1">
+					<objPosition posX="1" posY="2"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="step" stepName="MS2_2">
+					<objPosition posX="1" posY="4"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<step stepType="outStep" stepName="F1_MS_2_OUT">
+					<objPosition posX="1" posY="6"></objPosition>
+					<literals max="" min="" delay=""></literals>
+				</step>
+				<transition>
+					<objPosition posX="1" posY="1"></objPosition>
+					<transitionCondition invertLogic="false">
+						<boolLiteral>true</boolLiteral>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="1" posY="5"></objPosition>
+					<transitionCondition invertLogic="false">
+						<sectionName>T_RetourCI</sectionName>
+					</transitionCondition>
+				</transition>
+				<transition>
+					<objPosition posX="1" posY="3"></objPosition>
+					<transitionCondition invertLogic="false">
+						<variableName>iebPontPosBasse</variableName>
+					</transitionCondition>
+				</transition>
+				<textBox width="1" height="1">Vers cuve E<objPosition posX="0" posY="4"></objPosition>
+				</textBox>
+				<textBox width="1" height="1">Descendre<objPosition posX="0" posY="2"></objPosition>
+				</textBox>
+			</networkSFC>
+		</macroSource>
+		<transitionSource name="Ttime1S">
+			<STSource>MS1_3.t &gt;= t#1S
+</STSource>
+		</transitionSource>
+		<transitionSource name="T1MS1Cuves">
+			<STSource>TabiebCuve[iintCompteur]
+</STSource>
+		</transitionSource>
+		<transitionSource name="TintInf4">
+			<STSource>iintCompteur &lt; 3
+</STSource>
+		</transitionSource>
+		<transitionSource name="TIntSupEgal4">
+			<STSource>iintCompteur &gt;= 3
+</STSource>
+		</transitionSource>
+		<transitionSource name="T_RetourCI">
+			<STSource>iebPontPosCuveE and iebPontPosBasse
+</STSource>
+		</transitionSource>
+	</SFCProgram>
+	<program>
+		<identProgram name="F1_Post" type="section" task="MAST"></identProgram>
+		<STSource>qebCuveEVoyantOrange := iebPontPosCuve3 AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuve1VoyantOrange := iebPontPosCuveE AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuve2VoyantOrange := iebPontPosCuve1 AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuve3VoyantOrange := iebPontPosCuve2 AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuveEVoyantRouge := NOT iebPontPosCuveE;
+qebCuve1VoyantRouge := NOT iebPontPosCuve1;
+qebCuve2VoyantRouge := NOT iebPontPosCuve2;
+qebCuve3VoyantRouge := NOT iebPontPosCuve3;
+qebCuveEVoyantVert := iebPontPosCuve3 AND ((iebPontPosHaute or iebPontPosBasse));
+qebCuve1VoyantVert := iebPontPosCuveE AND ((iebPontPosHaute or iebPontPosBasse));
+qebCuve2VoyantVert := iebPontPosCuve1 AND ((iebPontPosHaute or iebPontPosBasse));
+qebCuve3VoyantVert := iebPontPosCuve2 AND ((iebPontPosHaute or iebPontPosBasse));
+qebPontDeplacerDroite := MS1_1.x and (not iebPontPosCuveS);
+qebPontDeplacerGauche := MS2_2.x and (NOT iebPontPosCuveE);
+qebPontDescendre := (MS1_2.x or MS2_1.x) and (not iebPontPosBasse);
+qebPontMonter := MS1_4.x and (not iebPontPosHaute);
+if(F1_S_10.x = true) then
+	iintCompteur := iintCompteur + 1;
+end_if;
+if (true = F1_S_3.x) then
+	iintCompteur := 0;
+end_if;
+</STSource>
+	</program>
+	<program>
+		<identProgram name="F4_ModeManu" type="section" task="MAST"></identProgram>
+		<STSource>qebPontMonter := iebBpMonterPont AND (NOT iebBpDescendrePont) AND(NOT iebPontPosHaute) AND (NOT iebBpDeplacementDroitePont) AND (NOT iebDeplacementGauchePont);
+qebPontDeplacerDroite := iebBpDeplacementDroitePont AND NOT(iebBPDescendrePont) AND(NOT iebPontPosCuveS) AND (NOT iebBpMonterPont) AND (NOT iebDeplacementGauchePont);
+qebPontDescendre := iebBpDescendrePont AND NOT(iebBPMonterPont) AND(NOT iebPontPosBasse) AND (NOT iebBPDeplacementDroitePont) AND (NOT iebDeplacementGauchePont);
+qebPontDeplacerGauche := iebDeplacementGauchePont AND NOT(iebBPDescendrePont) AND(NOT iebPontPosCuveE) AND (NOT iebBPDeplacementDroitePont) AND (NOT iebBPMonterPont);
+qebCuveEVoyantOrange := iebPontPosCuve3 AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuve1VoyantOrange := iebPontPosCuveE AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuve2VoyantOrange := iebPontPosCuve1 AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuve3VoyantOrange := iebPontPosCuve2 AND (not(iebPontPosHaute OR iebPontPosBasse));
+qebCuveEVoyantRouge := NOT iebPontPosCuveE;
+qebCuve1VoyantRouge := NOT iebPontPosCuve1;
+qebCuve2VoyantRouge := NOT iebPontPosCuve2;
+qebCuve3VoyantRouge := NOT iebPontPosCuve3;
+qebCuveEVoyantVert := iebPontPosCuve3 AND ((iebPontPosHaute or iebPontPosBasse));
+qebCuve1VoyantVert := iebPontPosCuveE AND ((iebPontPosHaute or iebPontPosBasse));
+qebCuve2VoyantVert := iebPontPosCuve1 AND ((iebPontPosHaute or iebPontPosBasse));
+qebCuve3VoyantVert := iebPontPosCuve2 AND ((iebPontPosHaute or iebPontPosBasse));
+</STSource>
+	</program>
+	<dataBlock>
+		<variables name="qebPontDeplacerGauche" typeName="EBOOL" topologicalAddress="%Q0.2.0"></variables>
+		<variables name="iebPontPosCuve1" typeName="EBOOL" topologicalAddress="%I0.1.8"></variables>
+		<variables name="mxF1" typeName="BOOL"></variables>
+		<variables name="iebBpMonterPont" typeName="EBOOL" topologicalAddress="%I0.1.1"></variables>
+		<variables name="mxA6" typeName="BOOL"></variables>
+		<variables name="iebComModeManu" typeName="EBOOL" topologicalAddress="%I0.1.6"></variables>
+		<variables name="iebBpDescendrePont" typeName="EBOOL" topologicalAddress="%I0.1.2"></variables>
+		<variables name="iebBpPresencePiece" typeName="EBOOL" topologicalAddress="%I0.1.0"></variables>
+		<variables name="iebPontPosHaute" typeName="EBOOL" topologicalAddress="%I0.1.13"></variables>
+		<variables name="qebCuveEVoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.15"></variables>
+		<variables name="iebBpanfArretUrgence" typeName="EBOOL" topologicalAddress="%I0.1.14"></variables>
+		<variables name="qebCuve1VoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.8"></variables>
+		<variables name="mxResult" typeName="BOOL"></variables>
+		<variables name="qebCuve3VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.7"></variables>
+		<variables name="qebCuve2VoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.10"></variables>
+		<variables name="TabiebCuve" typeName="ARRAY[0..3] OF EBOOL" topologicalAddress="%I0.1.7"></variables>
+		<variables name="qebCuve1VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.5"></variables>
+		<variables name="qebCuve2VoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.11"></variables>
+		<variables name="qebCuve3VoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.12"></variables>
+		<variables name="qebCuveEVoyantOrange" typeName="EBOOL" topologicalAddress="%Q0.2.14"></variables>
+		<variables name="qebCuve2VoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.6"></variables>
+		<variables name="qebPontDescendre" typeName="EBOOL" topologicalAddress="%Q0.2.2"></variables>
+		<variables name="qebPontMonter" typeName="EBOOL" topologicalAddress="%Q0.2.3"></variables>
+		<variables name="qebCuveEVoyantRouge" typeName="EBOOL" topologicalAddress="%Q0.2.4"></variables>
+		<variables name="qebCuve3VoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.13"></variables>
+		<variables name="iebPontPosBasse" typeName="EBOOL" topologicalAddress="%I0.1.12"></variables>
+		<variables name="iebComModeAuto" typeName="EBOOL" topologicalAddress="%I0.1.5"></variables>
+		<variables name="iebPontPosCuveS" typeName="EBOOL" topologicalAddress="%I0.1.11"></variables>
+		<variables name="mxF1A2" typeName="BOOL"></variables>
+		<variables name="iebPontPosCuveE" typeName="EBOOL" topologicalAddress="%I0.1.7"></variables>
+		<variables name="iintCompteur" typeName="INT"></variables>
+		<variables name="mxF4" typeName="BOOL"></variables>
+		<variables name="mwA1" typeName="BOOL"></variables>
+		<variables name="mxA5" typeName="BOOL"></variables>
+		<variables name="iebDeplacementGauchePont" typeName="EBOOL" topologicalAddress="%I0.1.4"></variables>
+		<variables name="iebPontPosCuve3" typeName="EBOOL" topologicalAddress="%I0.1.10"></variables>
+		<variables name="qebCuve1VoyantVert" typeName="EBOOL" topologicalAddress="%Q0.2.9"></variables>
+		<variables name="iebBpDeplacementDroitePont" typeName="EBOOL" topologicalAddress="%I0.1.3"></variables>
+		<variables name="iebPontPosCuve2" typeName="EBOOL" topologicalAddress="%I0.1.9"></variables>
+		<variables name="mxD1" typeName="BOOL"></variables>
+		<variables name="qebPontDeplacerDroite" typeName="EBOOL" topologicalAddress="%Q0.2.1"></variables>
+	</dataBlock>
+</PGMExchangeFile>

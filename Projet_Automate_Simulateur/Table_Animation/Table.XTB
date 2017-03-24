@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TABExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:40:58" content="Fichier source tables d'animation" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Simulateur" version="0.0.6" dateTime="date_and_time#2016-3-9-11:54:57"></contentHeader>
+	<animationTable name="Table" location="" version="1.0" dateTime="date_and_time#2016-3-16-10:40:58" ExtStringAnim="0" ExtStringAnimLen="100">
+		<elementDescription displayBase="4" name="iebBpanfArretUrgence"></elementDescription>
+		<elementDescription displayBase="4" name="iebBpCuvesVides"></elementDescription>
+		<elementDescription displayBase="4" name="iebBpDeplacementDroitePont"></elementDescription>
+		<elementDescription displayBase="4" name="iebBpDescendrePont"></elementDescription>
+		<elementDescription displayBase="4" name="iebBpMonterPont"></elementDescription>
+		<elementDescription displayBase="4" name="iebBpPresencePiece"></elementDescription>
+		<elementDescription displayBase="4" name="iebComModeAuto"></elementDescription>
+		<elementDescription displayBase="4" name="iebComModeManu"></elementDescription>
+		<elementDescription displayBase="4" name="iebDeplacementGauchePont"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosBasse"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosCuve1"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosCuve2"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosCuve3"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosCuveE"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosCuveS"></elementDescription>
+		<elementDescription displayBase="4" name="iebPontPosHaute"></elementDescription>
+		<elementDescription displayBase="4" name="iintCompteur"></elementDescription>
+		<elementDescription displayBase="4" name="mwA1"></elementDescription>
+		<elementDescription displayBase="4" name="mxA5"></elementDescription>
+		<elementDescription displayBase="4" name="mxA6"></elementDescription>
+		<elementDescription displayBase="4" name="mxA6_0"></elementDescription>
+		<elementDescription displayBase="4" name="mxD1"></elementDescription>
+		<elementDescription displayBase="4" name="mxF1A2"></elementDescription>
+		<elementDescription displayBase="4" name="mxF4"></elementDescription>
+		<elementDescription displayBase="4" name="mxResult"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve1VoyantOrange"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve1VoyantRouge"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve1VoyantVert"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve2VoyantOrange"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve2VoyantRouge"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve2VoyantVert"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve3VoyantOrange"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve3VoyantRouge"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuve3VoyantVert"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuveEVoyantOrange"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuveEVoyantRouge"></elementDescription>
+		<elementDescription displayBase="4" name="qebCuveEVoyantVert"></elementDescription>
+		<elementDescription displayBase="4" name="qebPontDeplacerDroite"></elementDescription>
+		<elementDescription displayBase="4" name="qebPontDeplacerGauche"></elementDescription>
+		<elementDescription displayBase="4" name="qebPontDescendre"></elementDescription>
+		<elementDescription displayBase="4" name="qebPontMonter"></elementDescription>
+	</animationTable>
+</TABExchangeFile>

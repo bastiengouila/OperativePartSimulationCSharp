@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IOExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:24:27" content="Fichier source configuration" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Physique" version="0.0.28" dateTime="date_and_time#2016-3-9-12:38:0"></contentHeader>
+	<IOConf>
+		<PLC autoRun="false" MWInitZero="true" ColdStartOnly="false" numberInternalWord="512" numberConstantWord="128" numberInternalBit="256">
+			<partItem family="Premium" partNumber="TSXP57104M" vendorName="Schneider Automation" version="02.00"></partItem>
+			<equipInfo topoAddress="\0.0\0.0" position="0"></equipInfo>
+			<configATS>
+				<busATS name="XBus">
+					<equipInfo topoAddress="\0" position="0"></equipInfo>
+					<rackATS>
+						<partItem family="Rack" partNumber="TSXRKY6EX" vendorName="Schneider Automation" version="01.00"></partItem>
+						<equipInfo topoAddress="\0.0\0" position="0"></equipInfo>
+						<powerSupply>
+							<partItem family="Supply" partNumber="TSXPSY2600M" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.(P)" position="-1"></equipInfo>
+						</powerSupply>
+						<moduleATS UCMod="true">
+							<partItem family="Premium" partNumber="TSXP57104M" vendorName="Schneider Automation" version="02.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.0" position="0"></equipInfo>
+							<configModule>
+								<channelATS ASFCatKey="UnitelwaySCPChannel0" task="MAST" number="0">
+									<descFB code="0" version="255"></descFB>
+									<descIOB IOBFileName="IOB_3_0004000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x400"></hexaValue>
+										<hexaValue hexaValue="0x1e0f"></hexaValue>
+										<hexaValue hexaValue="0x8"></hexaValue>
+									</paramKW>
+								</channelATS>
+							</configModule>
+						</moduleATS>
+						<moduleATS>
+							<partItem family="Discrete" partNumber="TSXDEY64D2K" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.1" position="1"></equipInfo>
+							<configModule>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="0">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="8">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="16">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="24">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="32">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="40">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="48">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTORInSTD_MASTER" task="MAST" number="56">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0002000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x1"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+							</configModule>
+						</moduleATS>
+						<moduleATS>
+							<partItem family="Discrete" partNumber="TSXDSY32T2K" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.2" position="2"></equipInfo>
+							<configModule>
+								<channelATS ASFCatKey="InRackTOROutReactivateAndFallBackAndSupplyMonitoring_MASTER" task="MAST" number="0">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0102000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x16"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTOROutReactivateAndFallBackAndSupplyMonitoring_MASTER" task="MAST" number="8">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0102000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x16"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTOROutReactivateAndFallBackAndSupplyMonitoring_MASTER" task="MAST" number="16">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0102000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x16"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+								<channelATS ASFCatKey="InRackTOROutReactivateAndFallBackAndSupplyMonitoring_MASTER" task="MAST" number="24">
+									<descFB code="1" version="16"></descFB>
+									<descIOB IOBFileName="IOB_0_0102000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x16"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+								</channelATS>
+							</configModule>
+						</moduleATS>
+						<moduleATS>
+							<partItem family="Communication" partNumber="TSXETY5103" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.3" position="3"></equipInfo>
+							<configModule></configModule>
+						</moduleATS>
+					</rackATS>
+				</busATS>
+			</configATS>
+		</PLC>
+	</IOConf>
+</IOExchangeFile>

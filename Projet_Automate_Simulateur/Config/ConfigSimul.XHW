@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IOExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V6.0 - 110610" dateTime="date_and_time#2016-3-16-10:35:33" content="Fichier source configuration" DTDVersion="41"></fileHeader>
+	<contentHeader name="Test_Simulateur" version="0.0.6" dateTime="date_and_time#2016-3-9-11:54:57"></contentHeader>
+	<IOConf>
+		<PLC autoRun="false" MWInitZero="true" ColdStartOnly="false" numberInternalWord="1024" numberConstantWord="256" numberInternalBit="512">
+			<partItem family="Premium" partNumber="TSXP57204M" vendorName="Schneider Automation" version="02.00"></partItem>
+			<equipInfo topoAddress="\0.0\0.0" position="0"></equipInfo>
+			<configATS>
+				<busATS name="XBus">
+					<equipInfo topoAddress="\0" position="0"></equipInfo>
+					<rackATS>
+						<partItem family="Rack" partNumber="TSXRKY6E" vendorName="Schneider Automation" version="01.00"></partItem>
+						<equipInfo topoAddress="\0.0\0" position="0"></equipInfo>
+						<powerSupply>
+							<partItem family="Supply" partNumber="TSXPSY2600M" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.(P)" position="-1"></equipInfo>
+						</powerSupply>
+						<moduleATS UCMod="true">
+							<partItem family="Premium" partNumber="TSXP57204M" vendorName="Schneider Automation" version="02.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.0" position="0"></equipInfo>
+							<configModule>
+								<channelATS ASFCatKey="UnitelwaySCPChannel0" task="MAST" number="0">
+									<descFB code="0" version="255"></descFB>
+									<descIOB IOBFileName="IOB_3_0004000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0x400"></hexaValue>
+										<hexaValue hexaValue="0x1e0f"></hexaValue>
+										<hexaValue hexaValue="0x8"></hexaValue>
+									</paramKW>
+								</channelATS>
+							</configModule>
+						</moduleATS>
+						<moduleATS>
+							<partItem family="Communication" partNumber="TSXETY5103" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.2" position="2"></equipInfo>
+							<configModule></configModule>
+						</moduleATS>
+						<moduleATS>
+							<partItem family="Counting" partNumber="TSXCTY2A" vendorName="Schneider Automation" version="01.00"></partItem>
+							<equipInfo topoAddress="\0.0\0.3" position="3"></equipInfo>
+							<configModule>
+								<channelATS ASFCatKey="UpCounting" task="MAST" number="0">
+									<descFB code="10" version="16"></descFB>
+									<descIOB IOBFileName="IOB_1_0302000_32" version="1"></descIOB>
+									<paramKW>
+										<hexaValue hexaValue="0xff01"></hexaValue>
+										<hexaValue hexaValue="0x8"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKW>
+									<paramKPW>
+										<hexaValue hexaValue="0x11"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+										<hexaValue hexaValue="0x0"></hexaValue>
+									</paramKPW>
+								</channelATS>
+							</configModule>
+						</moduleATS>
+					</rackATS>
+				</busATS>
+			</configATS>
+		</PLC>
+	</IOConf>
+</IOExchangeFile>
